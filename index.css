@@ -18,6 +18,9 @@ body {
   font-size: 28px;
   margin-top: 1rem;
 }
+.heading__text {
+  font-size: 20px;
+}
 span {
   color: hsl(0, 0%, 59%);
   font-weight: 400;
