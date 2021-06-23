@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  text-align: center;
+}
+.heading {
+  font-size: 28px;
+  margin-top: 1rem;
+}
+span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+}
+.form__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0.8rem;
+  position: relative;
+}
+input {
+  width: 500px;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+.show-error::after {
+  content: "Please Provide a valid email address";
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+  position: absolute;
+  bottom: -1.5rem;
+}
+.illustration {
+  margin-top: 3rem;
+}
+.illustration img {
+  max-height: 600px;
+  max-width: 900px;
+  min-width: 300px;
+}
+.btn {
+  background-color: hsl(223, 87%, 63%);
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(16, 44, 255, 0.92);
+  box-shadow: 0px 1px 20px 0px rgba(16, 44, 255, 0.92);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logos {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  width: 20px;
+  gap: 20px;
+}
+.text > p {
+  margin-top: 1rem;
+  padding-left: 80px;
+  font-size: 10px;
+  color: hsl(0, 0%, 59%);
+}
+@media screen and (max-width: 826px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .illustration img {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .form__container {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 400px;
+  }
+  .btn {
+    padding: 1rem 11rem;
+  }
+}
